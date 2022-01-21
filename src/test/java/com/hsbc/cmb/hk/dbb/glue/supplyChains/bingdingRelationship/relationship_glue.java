@@ -44,7 +44,7 @@ public class relationship_glue {
 
     @When("^I click Edit button on the page$")
     public void iClickEditButtonOnThePage() {
-        relationship_step.clickEditButton();
+        relationship_step.contentList();
     }
 
     @Then("^I should direct to the create new counterparty page$")
@@ -54,7 +54,7 @@ public class relationship_glue {
 
     @When("^I click delete on the Downstream Company page$")
     public void iClickDeleteOnTheDownstreamCompanyPage() {
-        relationship_step.clickDeleteButton();
+        relationship_step.deleteCompany();
     }
 
     @When("^I click Create New Counter button on the page$")
@@ -86,5 +86,15 @@ public class relationship_glue {
     @When("^I click Counter Name BOX on the Counter Windows page$")
     public void iClickCounterNameBOXOnTheCounterWindowsPage() {
         relationship_step.clickCounterNameBox();
+    }
+
+    @When("^I click Edit Supplier button on the page$")
+    public void iClickEditSupplierButtonOnThePage() {
+        relationship_step.supplierList();
+    }
+
+    @When("^I click delete on the Downstream Company Supplier page$")
+    public void iClickDeleteOnTheDownstreamCompanySupplierPage() {
+        relationship_step.deleteCompanyOnSupplier();
     }
 }
